@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<title>Atividade 3 X3DOM</title>
+		<script type="text/javascript" src="x3dom.js"></script>
+		<link rel="stylesheet" type="text/css" href="x3dom.css">
+	</head>
+	<body>
+		<!-- Forma 1 -->
+		<p>a) Objeto 1: 4 cilindros, uma esfera e um cubo</p>
+		<x3d width='500px' height='400px'>
+			<scene>
+				<shape>
+					<appearance>
+						<material diffuseColor='0 0 1'/>
+					</appearance>
+					<sphere radius='1'/>
+				</shape>
+
+				<transform translation='0 0 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='1 0 0'></material>
+						</appearance>
+						<box size='1.5 1.5 1.5'/>
+					</shape>
+				</transform>	
+				<transform translation='0 0 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='255 255 0'></material>
+						</appearance>
+						<cylinder height='4.5' radius='0.1'/>
+					</shape>
+				</transform>
+				<transform translation='0 0 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='255 0 255'></material>
+						</appearance>
+						<cylinder height='3.5' radius='0.2'/>
+					</shape>
+				</transform>	
+				<transform translation='0 0 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='0 255 255'></material>
+						</appearance>
+						<cylinder height='2.5' radius='0.3'/>
+					</shape>
+				</transform>
+				<transform translation='0 0 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='0 100 0'></material>
+						</appearance>
+						<cylinder height='0.1' radius='2'/>
+					</shape>
+				</transform>		
+			</scene>
+		</x3d>
+		<!-- Forma 2 -->
+		<p>b) Objeto 2: 4 cones e uma esfera</p>	
+		<x3d width='500px' height='400px'>
+			<scene>
+				<shape>
+					<appearance>
+						<material diffuseColor='#363636'/>
+					</appearance>
+					<sphere radius='1.3'/>
+				</shape>
+				<transform translation='0 1.6 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#191970'></material>
+						</appearance>
+						<cone height='1.7' bottomRadius='1.3'/>
+					</shape>
+				</transform>	
+				<transform translation='0 1.6 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#191970'></material>
+						</appearance>
+						<cone height='1.7' bottomRadius='1.3'/>
+					</shape>
+				</transform>
+				<transform translation='0 -1.6 0' rotation='0 0 1 3.1415'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#191970'></material>
+						</appearance>
+						<cone height='1.7' bottomRadius='1.3'/>
+					</shape>
+				</transform>
+				<transform translation='-1.6 0 0' rotation='0 0 1 1.57075'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#191970'></material>
+						</appearance>
+						<cone height='1.7' bottomRadius='1.3'/>
+					</shape>
+				</transform>	
+				<transform translation='1.6 0 0' rotation='0 0 1 -1.57075'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#191970'></material>
+						</appearance>
+						<cone height='1.7' bottomRadius='1.3'/>
+					</shape>
+				</transform>		
+			</scene>
+		</x3d>
+		<!-- Forma 3 -->
+		<p>c) Objeto 3: 3 esferas, 1 cone e 1 cilindro</p>	
+		<x3d width='500px' height='400px'>
+			<scene>
+				<shape>
+					<appearance>
+						<material diffuseColor='#4F4F4F'/>
+					</appearance>
+					<sphere radius='1.3'/>
+				</shape>
+				<transform translation='0 1.7 0'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#32CD32'></material>
+						</appearance>
+						<cone height='2.3' bottomRadius='1.3'/>
+					</shape>
+				</transform>
+				<transform translation='-0.5 0.2 1.2'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#00008B'></material>
+						</appearance>
+						<sphere radius='0.2'/>
+					</shape>
+				</transform>	
+				<transform translation='0.5 0.2 1.2'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#00008B'></material>
+						</appearance>
+						<sphere radius='0.2'/>
+					</shape>
+				</transform>
+				<transform translation='0 -0.4 0.8' rotation='1 0 0 0.78'>
+					<shape>
+						<appearance>
+							<material diffuseColor='#FF0000'></material>
+						</appearance>
+						<cylinder radius='0.6' height='0.1'/>
+					</shape>
+				</transform>
+			</scene>
+		</x3d>
+	</body>
+</html>
